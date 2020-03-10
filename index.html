@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="descripion" content="Webpage with an image">
+    <meta name="keywords" content="full house theme song">
+    <meta name="author" content="Christopher-Al">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Clicking things </title>
+    </head>
+    <body>
+<p>Click anywhere in this window to change the background color of body.</p>
+
+<script>
+window.onclick = myFunction;
+
+function myFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}
+</script>
+  <br>
+    <button onclick="document.getElementById('myimage').src='./images/happy.jpg'">happy</button>
+      <img id="myimage" src="./images/happy.jpg" style="width:100px">
+        <button onclick="document.getElementById('myimage').src='./images/sad.jpg'">Sad</button>
+          <br>
+            <br>
+              <button onclick="myFunction()">Button</button>
+            <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "you pressed the button...";
+}
+</script>
+<p id="demo">Do not press the button</p>
+
+<button onclick="magic()">click me to make magic</button>
+  <script>
+function magic() {
+  document.getElementById("poo").innerHTML = "abracadabra";
+}
+</script>
+<p id="poo"></p>
+  </body>
+</html>
